@@ -1,18 +1,18 @@
-function adicionaNovoElemento()
-{
-    const novoElemento = document.getElementById("elemento");
-    const espacoLista = document.createElement("li");
-    if (novoElemento.value == "")
-    {
-        alert("Insira um elemento válido!");
-        return;
-    }
-    espacoLista.innerText = novoElemento.value;
-    lista.appendChild(espacoLista);
-    novoElemento.value = "";
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>To-do List</h1>
+    <input type="text" name="elemento" id="elemento">
+    <button id="adiciona-elemento">Adicionar</button>
+    <ul id="minha-lista">
 
-}
-
-const lista = document.getElementById("minha-lista");
-const adiciona = document.getElementById("adiciona-elemento");
-adiciona.onclick = adicionaNovoElemento;
+    </ul>
+    
+    <script src="script.js"></script>
+</body>
+</html>
