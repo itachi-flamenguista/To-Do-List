@@ -15,15 +15,19 @@ function adicionaNovoElemento()
 
 function excluiElemento()
 {
-    const elementoTexto = document.getElementById("elemento").value;
-    for (let valor of lista)
+    var elementoTexto = document.getElementById("elemento").value;
+    console.log(elementoTexto);
+    const todosEl = lista.getElementsByTagName("li");
+    for (let valor of todosEl)
     {
-        if (elementoTexto == valor)
+        if (valor.innerText == elementoTexto) // todosEl é uma lista de li e não strings, portanto temos que comparar o innerText do li;
         {
-            lista.removeChild("li");
+            lista.removeChild(valor);
+            elementoTexto = "";
             return;
         }
     }
+    
     alert("Valor não existente");
 }
 
