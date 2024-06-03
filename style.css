@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background-color: #8351A8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    display: block;
+    font-size: 35px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+#container{
+    width: 560px; /* Largura do contêiner */
+    height: 600px; /* Altura do contêiner */
+    background-color: white;
+    border-radius: 10px;
+}
+
+#elemento{
+    margin-top: 50px;
+    margin-left: 70px;
+    padding-left: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    font-style: normal;
+    width: 280px;
+    height: 55px;
+    border: 2px solid #939090;
+    border-radius: 20px;
+}
+
+#adiciona-elemento{
+    width: 55px;
+    height: 55px;
+    background-color: #A874D2;
+    border: 0px;
+    border-radius: 15px;
+    margin-left: 10px;
+    font-size: 30px;
+    color: white;
+    padding-bottom: 5px;
+    box-shadow: 0px 5px #8847bd;
+}
+
+#adiciona-elemento:hover{
+    background-color: #8c55ba;
+}
+
+#remove-elemento{
+    width: 55px;
+    height: 55px;
+    background-color: #3B274A;
+    border: 0px;
+    border-radius: 15px;
+    margin-left: 10px;
+    font-size: 30px;
+    color: white;
+    padding-bottom: 5px;
+    box-shadow: 0px 5px #23172d;
+}
+
+#minha-lista li{
+    list-style-type: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    font-style: normal;
+    margin-left: 50px;
+    margin-top: 15px;
+}
